@@ -8,7 +8,7 @@
 }
 
 body {
-    background: black;
+    background: #310f22;
 }
 
 header {
@@ -53,7 +53,7 @@ header ul li a {
 
 header ul li a:hover {
     background: #ef1a7d;
-    color: black;
+    color: #310f22;
     box-shadow: 0 0 10px #ef1a7d;
 }
 
@@ -71,12 +71,60 @@ header .action .searchBx {
 header .action .searcBx i {
     font-size: 1.4em;
     margin: 5px;
-    color: #222;
+    color: #310f22;
 }
 
 header .action .searchBx input {
     outline: none;
     border: none;
     font-size: 1em;
-    color: #222;
+    color: #310f22;
+}
+
+/*BANNER*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content {
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2 {
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p {
+    font-size: 1em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5f0c33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #ef1a7d;
 }
