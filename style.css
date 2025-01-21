@@ -86,30 +86,37 @@ header .action .searchBx input {
 .banner {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .banner .bg {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Centra el texto */
 }
 
 .banner .bg .content {
     width: 50%;
-    height: 100%;
+    /* Reduce el ancho del contenido para posicionarlo mejor */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    margin-left: 10%;
+    /* Mueve el contenido hacia la izquierda */
 }
 
 .banner .bg .content h2 {
     font-size: 4em;
     color: white;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .banner .bg .content p {
@@ -127,4 +134,74 @@ header .action .searchBx input {
     border-radius: 5px;
     margin-top: 20px;
     box-shadow: 0 0 10px #ef1a7d;
+}
+
+.banner .bg .content a:hover {
+    background: #ef1a7d;
+    border: none;
+    color: #050e2d;
+}
+
+.banner .bg img {
+    width: 600px;
+    /* Reduce el tamaño de la imagen */
+    height: auto;
+    /* Mantén la proporción original */
+    object-fit: contain;
+}
+
+/* ABOUT US */
+
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .contentBx {
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBx h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+.about .contentBx p {
+    max-width: 600px;
+    text-align: justify;
+    color: #dbd9d9;
+}
+
+.about .bg .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: 1px solid #5f0c33;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.about .bg .content a:hover {
+    background: #ef1a7d;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
+.about .bg img {
+    width: 250px;
+    /* Reduce el tamaño de la imagen */
+    height: auto;
+    /* Mantén la proporción original */
+    object-fit: contain;
 }
