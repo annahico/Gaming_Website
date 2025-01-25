@@ -60,13 +60,37 @@
         <img src="./img/videogame.png" alt="About Image">
     </div>
 
-    <script>
-        // sticky NavBar
-        window.addEventListener("scroll", function () {
-            let header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
+
+    <!--GAMES -->
+
+    <div class="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list">All</li>
+            <li class="list">PC Games</li>
+            <li class="list">Mobile Games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="./img/baldurs.jpg">
+                <div class="content">
+                    <h4>Game Name</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$40</span></p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                // sticky NavBar
+                window.addEventListener("scroll", function () {
+                    let header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                });
+            </script>
 
 
 </body>

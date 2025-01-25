@@ -17,6 +17,10 @@ body {
     /* 10px */
 }
 
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ef1a7d);
+    border-radius: 6px;
+}
 
 /* Header */
 header {
@@ -164,6 +168,25 @@ header .action .searchBx input {
     text-align: justify;
 }
 
+.about .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #ef1a7d;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.about .contentBx a :hover {
+    background: #ef1a7d;
+    border: none;
+    color: #310f22;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
 .about img {
     width: 15.625rem;
     /* 250px */
@@ -194,4 +217,143 @@ header .action .searchBx input {
 .btn:hover {
     background: #ef1a7d;
     color: #050e2d;
+}
+
+/* GAMES Section */
+
+.games {
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.games h2 {
+    color: white;
+    margin: 10px 0;
+}
+
+.games ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.games ul li {
+    list-style: none;
+    padding: 10 px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+.games ul li .active {
+    background: #ef1a7d;
+    color: #310f22;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
+.games .cardBx {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.games .cardBx .card {
+    width: 280px;
+    margin: 20px;
+    background: #310f22;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.games .cardBx .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.games .cardBx .card .content {
+    padding: 10px;
+}
+
+.games .cardBx .card .content h4 {
+    color: white;
+    margin: 15px 0;
+}
+
+.games .cardBx .card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #310f22;
+    border-radius: 10px;
+    transform: scaleX(2);
+    transform-origin: left;
+    animation: animate 2s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .progress-line span {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #ef1a7d;
+    box-shadow: 0 0 10px #ef1a7d;
+    transform-origin: left;
+    animation: animate 2s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.games .cardBx .card .info {
+    border-top: 2px solid #ef1a7d;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games .cardBx .card .info p {
+    font-size: 1em;
+    color: white;
+}
+
+.games .cardBx .card .info p span {
+    color: #ef1a7d;
+}
+
+.games .cardBx .card .info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #ef1a7d;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.games .cardBx .card .info a :hover {
+    background: #ef1a7d;
+    border: none;
+    color: #310f22;
+    box-shadow: 0 0 10px #ef1a7d;
 }
