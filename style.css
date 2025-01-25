@@ -11,6 +11,13 @@ body {
     background: #310f22;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* 10px */
+}
+
+
 /* Header */
 header {
     position: fixed;
