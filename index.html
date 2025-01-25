@@ -61,18 +61,16 @@
     </div>
 
 
-    <!--GAMES -->
-
     <div class="games">
         <h2>Popular Games</h2>
         <ul>
-            <li class="list">All</li>
+            <li class="list active">All</li>
             <li class="list">PC Games</li>
             <li class="list">Mobile Games</li>
         </ul>
         <div class="cardBx">
             <div class="card" data-item="pc">
-                <img src="./img/baldurs.jpg">
+                <img src="./img/baldurs.jpg" alt="Baldur's Gate 3">
                 <div class="content">
                     <h4>Baldur's Gate 3</h4>
                     <div class="progress-line"><span></span></div>
@@ -82,9 +80,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="card" data-item="pc">
-                <img src="./img/dragon.jpg">
+                <img src="./img/dragon.jpg" alt="Dragon Age: The Veilguard">
                 <div class="content">
                     <h4>Dragon Age: The Veilguard</h4>
                     <div class="progress-line"><span></span></div>
@@ -94,9 +91,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="card" data-item="pc">
-                <img src="./img/witcher.jpg">
+                <img src="./img/witcher.jpg" alt="The Witcher 3">
                 <div class="content">
                     <h4>The Witcher 3</h4>
                     <div class="progress-line"><span></span></div>
@@ -106,9 +102,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="card" data-item="pc">
-                <img src="./img/kingdom.jpg">
+                <img src="./img/kingdom.jpg" alt="Kingdom Hearts III">
                 <div class="content">
                     <h4>Kingdom Hearts III</h4>
                     <div class="progress-line"><span></span></div>
@@ -118,14 +113,27 @@
                     </div>
                 </div>
             </div>
+            <div class="card" data-item="pc">
+                <img src="./img/god.jpg" alt="God Of WAR Ragnarok">
+                <div class="content">
+                    <h4>God Of WAR Ragnarok</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$60</span></p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <script>
-                // sticky NavBar
-                window.addEventListener("scroll", function () {
-                    let header = document.querySelector("header");
-                    header.classList.toggle("sticky", window.scrollY > 0);
-                });
-            </script>
+    <script>
+        // sticky NavBar
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 
 
 </body>
