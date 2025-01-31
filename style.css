@@ -360,15 +360,49 @@ header .action .searchBx input {
 .games .cardBx .card .info a {
     display: inline-block;
     padding: 10px 20px;
-    background: #ef1a7d;
+    margin: 20px 0;
+    border: 1px solid #ef1a7d;
+    /*background: #ef1a7d;
+    */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: 700;
-    transition: background 0.3s ease;
+    /*font-weight: 700;*/
+    letter-spacing: 1px;
 }
 
 .games .cardBx .card .info a:hover {
     background: #ff2d8e;
+    border: none;
+    color: black;
     box-shadow: 0 0 10px #ef1a7d;
+}
+
+.games .cardBx .card.hide {
+    display: none;
+}
+
+.tournaments {
+    padding: 0px 10px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments h2 {
+    color: white;
+    margin: 10px 0;
+}
+
+.tournaments .boxBx {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
