@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -360,14 +361,12 @@ header .action .searchBx input {
 .games .cardBx .card .info a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     border: 1px solid #ef1a7d;
-    /*background: #ef1a7d;
-    */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    /*font-weight: 700;*/
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -449,7 +448,7 @@ header .action .searchBx input {
 .tournaments .boxBx .box .content .watch {
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     border: 1px solid #ef1a7d;
     color: white;
     text-decoration: none;
@@ -613,4 +612,59 @@ footer .info ul li a i {
 
 footer .info ul li a i:hover {
     color: #310f22;
+}
+
+/* Responsive Design*/
+
+@media (max-width: 991px) {
+    header {
+        padding: 15px 40px;
+    }
+
+    header .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #310f22;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    header .nav .active {
+        display: flex;
+    }
+
+    header .nav li {
+        margin: 20px 0;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .toggleMenu.active {
+        background: url(close.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 }
