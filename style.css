@@ -388,7 +388,7 @@ header .action .searchBx input {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -406,3 +406,8 @@ header .action .searchBx input {
     flex-wrap: wrap;
 }
 
+.tournaments .box img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
