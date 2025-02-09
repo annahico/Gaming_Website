@@ -484,3 +484,75 @@ header .action .searchBx input {
     box-shadow: 0 0 10px #ef1a7d;
 }
 
+/*contact*/
+
+.contact {
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact .formBx {
+    width: 50%;
+    padding: 30px;
+}
+
+.contact .form h1 {
+    color: white;
+}
+
+.contact .form .inputBx {
+    margin: 10px 0;
+}
+
+.contact .form .inputBx p {
+    color: white;
+}
+
+.contact .form .inputBx input,
+.contact .form .inputBx textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background: #411b36;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+
+.contact .form .inputBx textarea {
+    height: 150px;
+}
+
+.contact .form .inputBx input [type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #ef1a7d;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.contact .form .inputBx input [type="submit"]:hover {
+    background: #ef1a7d;
+    border: none;
+    color: #310f22;
+    box-shadow: 0 0 10px #ef1a7d;
+}
