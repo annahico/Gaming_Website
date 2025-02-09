@@ -406,8 +406,81 @@ header .action .searchBx input {
     flex-wrap: wrap;
 }
 
-.tournaments .box img {
-    width: 500px;
-    height: auto;
+.tournaments .boxBx .box {
+    width: 350px;
+    background: #411b36;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 40px;
 }
+
+.tournaments .boxBx .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content {
+    padding: 10px;
+    text-align: center;
+}
+
+.tournaments .boxBx .box .content h4 {
+    color: white;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.tournaments .boxBx .box .content p {
+    text-align: justify;
+    color: white;
+    margin-top: 10px;
+}
+
+.tournaments .boxBx .box .content .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .watch {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #ef1a7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tournaments .boxBx .box .content .watch:hover {
+    background: #ff2d8e;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
+.tournaments .boxBx .box .content .join {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #ef1a7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tournaments .boxBx .box .content .join:hover {
+    background: #ff2d8e;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
