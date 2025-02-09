@@ -556,3 +556,61 @@ header .action .searchBx input {
     color: #310f22;
     box-shadow: 0 0 10px #ef1a7d;
 }
+
+/* footer */
+
+footer {
+    padding: 10px 100px;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+footer .info p {
+    color: #dbd9d9;
+}
+
+footer .info ul {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ef1a7d;
+}
+
+footer .info ul li:hover {
+    background: #ef1a7d;
+    border: none;
+    box-shadow: 0 0 10px #ef1a7d;
+}
+
+footer .info ul li a i {
+    font-size: 1.5em;
+    color: white;
+}
+
+footer .info ul li a i:hover {
+    color: #310f22;
+}
